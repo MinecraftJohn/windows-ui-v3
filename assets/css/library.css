@@ -1,0 +1,160 @@
+/*########################################################
+Font Weight List  |  Margins List
+• 300             |  • 16px
+• 350             |  • 24px
+• 400             |  • 56px
+• 600             |  • 48px (top)
+• 700             |  
+##########################################################*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    /* ################################################## */
+    font-family: "Segoe UI Variable Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+:root,
+html[theme="light"] {
+    --page-background: url(../img/bloom-mica-light.png);
+    --focus-element: 0 0 0 1px #fff, 0 0 0 3px rgba(0, 0, 0, 0.8956);
+    --fillcolor-accent-default: #005FB8;
+    --fillcolor-accent-secondary: rgba(0, 95, 184, 0.9);
+    --fillcolor-accent-tertiary: rgba(0, 95, 184, 0.8);
+    --fillcolor-accent-disabled: rgba(0, 0, 0, 0.2169);
+    --fillcolor-accent-slctdtxtbg: #0078D4;
+    --fillcolor-control-transparent: rgba(255, 255, 255, 0);
+    --fillcolor-control-default: rgba(255, 255, 255, 0.7);
+    --fillcolor-control-secondary: rgba(249, 249, 249, 0.5);
+    --fillcolor-control-tertiary: rgba(249, 249, 249, 0.3);
+    --fillcolor-control-quarternary: rgba(243, 243, 243, 0.76);
+    --fillcolor-control-disabled: rgba(249, 249, 249, 0.3);
+    --fillcolor-control-inputactive: #fff;
+    --fillcolor-textonaccent-primary: #fff;
+    --fillcolor-textonaccent-secondary: rgba(255, 255, 255, 0.7);
+    --fillcolor-textonaccent-disabled: #fff;
+    --fillcolor-textonaccent-slctdtxt: #fff;
+    --fillcolor-text-primary: rgba(0, 0, 0, 0.8956);
+    --fillcolor-text-secondary: rgba(0, 0, 0, 0.6063);
+    --fillcolor-text-tertiary: rgba(0, 0, 0, 0.4458);
+    --fillcolor-text-disabled: rgba(0, 0, 0, 0.3614);
+    --elevation-accentcontrol-border-top: rgba(255, 255, 255, 0.08);
+    --elevation-accentcontrol-border-bot: rgba(0, 0, 0, 0.4);
+    --elevation-control-border-top: rgba(0, 0, 0, 0.0578);
+    --elevation-control-border-sid: rgba(0, 0, 0, 0.0578);
+    --elevation-control-border-bot: rgba(0, 0, 0, 0.1622);
+    --blur-acrylic: blur(30px);
+    --blur-mica: blur(120px);
+}
+
+html[theme="dark"] {
+    --page-background: url(../img/bloom-mica-dark.png);
+    --focus-element: 0 0 0 1px rgba(0, 0, 0, 0.7), 0 0 0 3px #fff;
+    --fillcolor-accent-default: #60CDFF;
+    --fillcolor-accent-secondary: rgba(96, 205, 255, 0.9);
+    --fillcolor-accent-tertiary: rgba(96, 205, 255, 0.8);
+    --fillcolor-accent-disabled: rgba(255, 255, 255, 0.1581);
+    --fillcolor-accent-slctdtxtbg: #0078D4;
+    --fillcolor-control-transparent: rgba(0, 0, 0, 0);
+    --fillcolor-control-default: rgba(255, 255, 255, 0.0605);
+    --fillcolor-control-secondary: rgba(255, 255, 255, 0.0837);
+    --fillcolor-control-tertiary: rgba(255, 255, 255, 0.0326);
+    --fillcolor-control-quarternary: rgba(255, 255, 255, 0.0605);
+    --fillcolor-control-disabled: rgba(255, 255, 255, 0.0419);
+    --fillcolor-control-inputactive: rgba(30, 30, 30, 0.7);
+    --fillcolor-textonaccent-primary: #000;
+    --fillcolor-textonaccent-secondary: rgba(0, 0, 0, 0.5);
+    --fillcolor-textonaccent-disabled: rgba(255, 255, 255, 0.5302);
+    --fillcolor-textonaccent-slctdtxt: #fff;
+    --fillcolor-text-primary: #fff;
+    --fillcolor-text-secondary: rgba(255, 255, 255, 0.786);
+    --fillcolor-text-tertiary: rgba(255, 255, 255, 0.5442);
+    --fillcolor-text-disabled: rgba(255, 255, 255, 0.3628);
+    --elevation-accentcontrol-border-top: rgba(255, 255, 255, 0.08);
+    --elevation-accentcontrol-border-bot: rgba(0, 0, 0, 0.14);
+    --elevation-control-border-top: rgba(255, 255, 255, 0.093);
+    --elevation-control-border-sid: rgba(255, 255, 255, 0.0698);
+    --elevation-control-border-bot: rgba(255, 255, 255, 0.0698);
+    --blur-acrylic: blur(30px);
+    --blur-mica: blur(120px);
+}
+
+*[font="caption"] {
+    font-family: "Segoe UI Variable Small";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+*[font="body-strong"] {
+    font-family: "Segoe UI Variable Text";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+*[font="body-large"] {
+    font-family: "Segoe UI Variable Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+*[font="subtitle"] {
+    font-family: "Segoe UI Variable Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+*[font="title"] {
+    font-family: "Segoe UI Variable Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+*[font="title-large"] {
+    font-family: "Segoe UI Variable Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+*[font="display"] {
+    font-family: "Segoe UI Variable Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 92px;
+}
+
+i[font="small"] {
+    font-family: "Segoe Fluent Icons";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+i {
+    font-family: "Segoe Fluent Icons";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
