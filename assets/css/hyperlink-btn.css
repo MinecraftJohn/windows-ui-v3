@@ -1,0 +1,72 @@
+a.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--elevation-subtle-transparent);
+    color: var(--fillcolor-accenttext-primary);
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 4px 11px 6px;
+}
+
+a.btn:hover {
+    background-color: var(--elevation-subtle-secondary);
+    color: var(--fillcolor-accenttext-secondary);
+}
+
+a.btn:active {
+    background-color: var(--elevation-subtle-tertiary);
+    color: var(--fillcolor-accenttext-tertiary);
+}
+
+a.btn[disabled] {
+    background-color: var(--elevation-subtle-disabled);
+    color: var(--fillcolor-accenttext-disabled);
+    pointer-events: none;
+}
+
+/* ############################################################################################ */
+
+a.neutral {
+    color: var(--fillcolor-text-primary);
+}
+
+a.neutral:hover {
+    color: var(--fillcolor-text-primary);
+}
+
+a.neutral:active {
+    color: var(--fillcolor-text-secondary);
+}
+
+a.neutral[disabled] {
+    color: var(--fillcolor-text-disabled);
+}
+
+/* ############################################################################################ */
+
+a.alt {
+    background-color: var(--elevation-subtle-transparent);
+    padding: 5px 0px 7px;
+}
+
+a.alt:hover {
+    background-color: var(--elevation-subtle-transparent);
+}
+
+a.alt:active {
+    background-color: var(--elevation-subtle-transparent);
+}
+
+/* ############################################################################################ */
+
+a.icon12 {
+    gap: 0;
+}
+
+a.icon12 i {
+    font-size: 12px;
+    line-height: 12px;
+}

@@ -11,8 +11,6 @@ Font Weight List  |  Margins List
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-user-select: none;
-    user-select: none;
     -webkit-tap-highlight-color: transparent;
     /* ################################################## */
     font-family: "Segoe UI Variable Text";
@@ -31,7 +29,11 @@ html[theme="light"] {
     --fillcolor-accent-tertiary: rgba(0, 95, 184, 0.8);
     --fillcolor-accent-disabled: rgba(0, 0, 0, 0.2169);
     --fillcolor-accent-slctdtxtbg: #0078D4;
-    --fillcolor-control-transparent: rgba(255, 255, 255, 0);
+    --fillcolor-accenttext-primary: #003E92;
+    --fillcolor-accenttext-secondary: #001A68;
+    --fillcolor-accenttext-tertiary: #005FB8;
+    --fillcolor-accenttext-disabled: rgba(0, 0, 0, 0.3614);
+    --fillcolor-control-transparent: transparent;
     --fillcolor-control-default: rgba(255, 255, 255, 0.7);
     --fillcolor-control-secondary: rgba(249, 249, 249, 0.5);
     --fillcolor-control-tertiary: rgba(249, 249, 249, 0.3);
@@ -51,6 +53,10 @@ html[theme="light"] {
     --elevation-control-border-top: rgba(0, 0, 0, 0.0578);
     --elevation-control-border-sid: rgba(0, 0, 0, 0.0578);
     --elevation-control-border-bot: rgba(0, 0, 0, 0.1622);
+    --elevation-subtle-transparent: transparent;
+    --elevation-subtle-secondary: rgba(0, 0, 0, 0.0373);
+    --elevation-subtle-tertiary: rgba(0, 0, 0, 0.0241);
+    --elevation-subtle-disabled: transparent;
     --blur-acrylic: blur(30px);
     --blur-mica: blur(120px);
 }
@@ -63,6 +69,10 @@ html[theme="dark"] {
     --fillcolor-accent-tertiary: rgba(96, 205, 255, 0.8);
     --fillcolor-accent-disabled: rgba(255, 255, 255, 0.1581);
     --fillcolor-accent-slctdtxtbg: #0078D4;
+    --fillcolor-accenttext-primary: #99EBFF;
+    --fillcolor-accenttext-secondary: #99EBFF;
+    --fillcolor-accenttext-tertiary: #60CDFF;
+    --fillcolor-accenttext-disabled: rgba(255, 255, 255, 0.3628);
     --fillcolor-control-transparent: rgba(0, 0, 0, 0);
     --fillcolor-control-default: rgba(255, 255, 255, 0.0605);
     --fillcolor-control-secondary: rgba(255, 255, 255, 0.0837);
@@ -83,6 +93,10 @@ html[theme="dark"] {
     --elevation-control-border-top: rgba(255, 255, 255, 0.093);
     --elevation-control-border-sid: rgba(255, 255, 255, 0.0698);
     --elevation-control-border-bot: rgba(255, 255, 255, 0.0698);
+    --elevation-subtle-transparent: transparent;
+    --elevation-subtle-secondary: rgba(255, 255, 255, 0.0605);
+    --elevation-subtle-tertiary: rgba(255, 255, 255, 0.0419);
+    --elevation-subtle-disabled: transparent;
     --blur-acrylic: blur(30px);
     --blur-mica: blur(120px);
 }
@@ -143,18 +157,19 @@ html[theme="dark"] {
     line-height: 92px;
 }
 
-i[font="small"] {
-    font-family: "Segoe Fluent Icons";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-}
-
 i {
     font-family: "Segoe Fluent Icons";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
+}
+
+h1,h2,h3,h4,h5,h6,p,label {
+    color: var(--fillcolor-text-primary);
+}
+
+a.btn,button {
+    -webkit-user-select: none;
+    user-select: none;
 }

@@ -5,20 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Windows UI</title>
     <link rel="stylesheet" href="assets/css/library.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/hyperlink-btn.css">
+    <link rel="stylesheet" href="assets/css/hyperlink.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
     <div style="
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;">
+        <div style="
         display: flex;
         gap: 8px;
-    ">
-        <button>Button</button>
-        <button variant-style="standard">Text</button>
+        position: fixed;
+        top: 5%;
+        right: 5%;
+        -webkit-user-select: none;
+        user-select: none;">
+            <input type="checkbox" name="theme" id="theme">
+            <label for="theme">Dark mode</label>
+        </div>
+        <h1>Buttons & Toggle Buttons</h1>
+        <button>Text</button>
+        <button class="standard">Text</button>
+        <button class="subtle">Text</button>
+        <button><i>&#xea3a;</i>Text</button>
+        <button class="standard">Text<i>&#xea3a;</i></button>
+        <button class="subtle icon"><i>&#xea3a;</i></button>
+        <button class="standard compact-touch"><i>&#xea3a;</i>Text</button>
+        <button class="subtle icon compact-touch"><i>&#xea3a;</i></button>
+        
+        <br><br>
+
+        <h1>Hyperlink Buttons</h1>
+        <a href="#" class="btn">Text</a>
+        <a href="#" class="btn"><i>&#xea3a;</i>Text</a>
+        <a href="#" class="btn neutral">Text</a>
+        <a href="#" class="btn alt">Alt</a>
+        <a href="#" class="btn alt"><i>&#xea3a;</i>Alt</a>
+        <a href="#" class="btn alt icon12">Alt<i>&#xea3a;</i></a>
+        
+        <br><br>
+
+        <h1>Hyperlink</h1>
+        <a href="#">Sample link</a>
     </div>
         
 </body>
