@@ -12,52 +12,181 @@
     <link rel="stylesheet" href="assets/css/button.css">
     <link rel="stylesheet" href="assets/css/hyperlink-btn.css">
     <link rel="stylesheet" href="assets/css/hyperlink.css">
+    <link rel="stylesheet" href="assets/css/dropdown.css">
     <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
-    <div style="
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;">
-        <div style="
-        display: flex;
-        gap: 8px;
-        position: fixed;
-        top: 5%;
-        right: 5%;
-        -webkit-user-select: none;
-        user-select: none;">
-            <input type="checkbox" name="theme" id="theme">
-            <label for="theme">Dark mode</label>
-        </div>
-        <h1>Buttons & Toggle Buttons</h1>
-        <button>Text</button>
-        <button class="standard">Text</button>
-        <button class="subtle">Text</button>
-        <button><i>&#xea3a;</i>Text</button>
-        <button class="standard">Text<i>&#xea3a;</i></button>
-        <button class="subtle icon"><i>&#xea3a;</i></button>
-        <button class="standard compact-touch"><i>&#xea3a;</i>Text</button>
-        <button class="subtle icon compact-touch"><i>&#xea3a;</i></button>
-        
-        <br><br>
+    <section class="theme-form">
+        <input type="checkbox" name="theme" id="theme">
+        <label for="theme">Dark mode</label>
+    </section>
+    <main class="main-content">
+        <h1 font="title">Buttons & Toggle Buttons</h1>
+        <br>
+        <section class="variant-section">
+            <h2 font="subtitle">Accent</h2>
+            <div class="variant-content">
+                <button>Text</button>
+                <button><i></i>Text</button>
+                <button>Text<i></i></button>
+                <button class="icon"><i></i></button>
+            </div>
+            <div class="variant-content">
+                <button disabled>Disabled</button>
+                <button disabled><i></i>Disabled</button>
+                <button disabled>Disabled<i></i></button>
+                <button class="icon" disabled><i></i></button>
+            </div>
+        </section>
+        <section class="variant-section">
+            <h2 font="subtitle">Standard</h2>
+            <div class="variant-content">
+                <button class="standard">Text</button>
+                <button class="standard"><i></i>Text</button>
+                <button class="standard">Text<i></i></button>
+                <button class="standard icon"><i></i></button>
+            </div>
+            <div class="variant-content">
+                <button class="standard" disabled>Disabled</button>
+                <button class="standard" disabled><i></i>Disabled</button>
+                <button class="standard" disabled>Disabled<i></i></button>
+                <button class="standard icon" disabled><i></i></button>
+            </div>
+        </section>
+        <section class="variant-section">
+            <h2 font="subtitle">Subtle</h2>
+            <div class="variant-content">
+                <button class="subtle">Text</button>
+                <button class="subtle"><i></i>Text</button>
+                <button class="subtle">Text<i></i></button>
+                <button class="subtle icon"><i></i></button>
+            </div>
+            <div class="variant-content">
+                <button class="subtle" disabled>Disabled</button>
+                <button class="subtle" disabled><i></i>Disabled</button>
+                <button class="subtle" disabled>Disabled<i></i></button>
+                <button class="subtle icon" disabled><i></i></button>
+            </div>
+        </section>
+        <section class="variant-section">
+            <h2 font="subtitle">Compact touch (Standard)</h2>
+            <div class="variant-content">
+                <button class="standard compact-touch">Text</button>
+                <button class="standard compact-touch"><i></i>Text</button>
+                <button class="standard compact-touch">Text<i></i></button>
+                <button class="standard icon compact-touch"><i></i></button>
+            </div>
+            <div class="variant-content">
+                <button class="standard compact-touch" disabled>Disabled</button>
+                <button class="standard compact-touch" disabled><i></i>Disabled</button>
+                <button class="standard compact-touch" disabled>Disabled<i></i></button>
+                <button class="standard icon compact-touch" disabled><i></i></button>
+            </div>
+        </section>
+        <section class="variant-section">
+            <h2 font="subtitle">Compact touch (Subtle)</h2>
+            <div class="variant-content">
+                <button class="subtle compact-touch">Text</button>
+                <button class="subtle compact-touch"><i></i>Text</button>
+                <button class="subtle compact-touch">Text<i></i></button>
+                <button class="subtle icon compact-touch"><i></i></button>
+            </div>
+            <div class="variant-content">
+                <button class="subtle compact-touch" disabled>Disabled</button>
+                <button class="subtle compact-touch" disabled><i></i>Disabled</button>
+                <button class="subtle compact-touch" disabled>Disabled<i></i></button>
+                <button class="subtle icon compact-touch" disabled><i></i></button>
+            </div>
+        </section>
+        <br>
+        <br>
+        <h1 font="title">Hyperlink Buttons</h1>
+        <br>
+        <section class="variant-section">
+            <h2 font="subtitle">Standard</h2>
+            <div class="variant-content">
+                <a href="#" class="btn">Text</a>
+                <a href="#" class="btn"><i></i>Text</a>
+                <a href="#" class="btn">Text<i></i></a>
+                <a href="#" class="btn"><i></i></a>
+            </div>
+            <div class="variant-content">
+                <a href="#" class="btn" disabled>Disabled</a>
+                <a href="#" class="btn" disabled><i></i>Disabled</a>
+                <a href="#" class="btn" disabled>Disabled<i></i></a>
+                <a href="#" class="btn" disabled><i></i></a>
+            </div>
+        </section>
+        <section class="variant-section">
+            <h2 font="subtitle">Neutral</h2>
+            <div class="variant-content">
+                <a href="#" class="btn neutral">Text</a>
+                <a href="#" class="btn neutral"><i></i>Text</a>
+                <a href="#" class="btn neutral">Text<i></i></a>
+                <a href="#" class="btn neutral"><i></i></a>
+            </div>
+            <div class="variant-content">
+                <a href="#" class="btn neutral" disabled>Disabled</a>
+                <a href="#" class="btn neutral" disabled><i></i>Disabled</a>
+                <a href="#" class="btn neutral" disabled>Disabled<i></i></a>
+                <a href="#" class="btn neutral" disabled><i></i></a>
+            </div>
+        </section>
+        <section class="variant-section">
+            <h2 font="subtitle">Alt</h2>
+            <div class="variant-content">
+                <a href="#" class="btn alt">Text</a>
+                <a href="#" class="btn alt"><i></i>Text</a>
+                <a href="#" class="btn alt">Text<i></i></a>
+                <a href="#" class="btn alt"><i></i></a>
+                <a href="#" class="btn alt icon12"><i>&#xe76b;</i>Icon12</a>
+                <a href="#" class="btn alt icon12">Icon12<i>&#xe76c;</i></a>
+                <a href="#" class="btn alt icon12"><i></i></a>
+            </div>
+            <div class="variant-content">
+                <a href="#" class="btn alt" disabled>Disabled</a>
+                <a href="#" class="btn alt" disabled><i></i>Disabled</a>
+                <a href="#" class="btn alt" disabled>Disabled<i></i></a>
+                <a href="#" class="btn alt" disabled><i></i></a>
+                <a href="#" class="btn alt icon12" disabled><i>&#xe76b;</i>Disabled</a>
+                <a href="#" class="btn alt icon12" disabled>Disabled<i>&#xe76c;</i></a>
+                <a href="#" class="btn alt icon12" disabled><i></i></a>
+            </div>
+        </section>
+        <br>
+        <br>
+        <h1 font="title">Hyperlink</h1>
+        <br>
+        <section class="variant-section">
+            <h2 font="subtitle">Default</h2>
+            <div class="variant-content">
+                <a href="#">Sample link</a>
+            </div>
+            <div class="variant-content">
+                <a href="#" disabled>Disabled sample link</a>
+            </div>
+        </section>
+        <br>
+        <br>
+        <h1 font="title">Dropdown</h1>
+        <br>
+        <section class="variant-section">
+            <h2 font="subtitle">Standard</h2>
+            <div class="variant-content">
+                <my-dropdown>
+                    <select name="test1" id="test1">
+                        <option value="1">Test</option>
+                        <option value="2">2Test</option>
+                    </select>
+                    <i></i>
+                </my-dropdown>
+            </div>
+            <div class="variant-content">
+            </div>
+        </section>
+    </main>
 
-        <h1>Hyperlink Buttons</h1>
-        <a href="#" class="btn">Text</a>
-        <a href="#" class="btn"><i>&#xea3a;</i>Text</a>
-        <a href="#" class="btn neutral">Text</a>
-        <a href="#" class="btn alt">Alt</a>
-        <a href="#" class="btn alt"><i>&#xea3a;</i>Alt</a>
-        <a href="#" class="btn alt icon12">Alt<i>&#xea3a;</i></a>
-        
-        <br><br>
-
-        <h1>Hyperlink</h1>
-        <a href="#">Sample link</a>
-    </div>
-        
 </body>
 
 </html>

@@ -60,7 +60,7 @@ button.standard:active {
     border-top: 1px solid var(--elevation-control-border-top);
 }
 
-button.standard:disabled{
+button.standard:disabled {
     background-color: var(--fillcolor-control-disabled);
     color: var(--fillcolor-text-disabled);
     border-top: 1px solid var(--elevation-control-border-top);
@@ -88,6 +88,7 @@ button.subtle:disabled {
     background-color: var(--elevation-subtle-disabled);
     color: var(--fillcolor-text-disabled);
 }
+
 /* ############################################################################################ */
 
 button.icon {
