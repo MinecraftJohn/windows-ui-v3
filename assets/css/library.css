@@ -57,6 +57,9 @@ html[theme="light"] {
     --elevation-subtle-secondary: rgba(0, 0, 0, 0.0373);
     --elevation-subtle-tertiary: rgba(0, 0, 0, 0.0241);
     --elevation-subtle-disabled: transparent;
+    --background-fillcolor-acrylicbackground-default: rgba(252, 252, 252, 0.85);
+    --background-fillcolor-acrylicbackground-base: rgba(243, 243, 243, 0.9);
+    --shadows-flyout: 0px 8px 16px rgba(0, 0, 0, 0.14);
     --blur-acrylic: blur(30px);
     --blur-mica: blur(120px);
 }
@@ -97,6 +100,9 @@ html[theme="dark"] {
     --elevation-subtle-secondary: rgba(255, 255, 255, 0.0605);
     --elevation-subtle-tertiary: rgba(255, 255, 255, 0.0419);
     --elevation-subtle-disabled: transparent;
+    --background-fillcolor-acrylicbackground-default: linear-gradient(0deg, rgba(44, 44, 44, 0.15), rgba(44, 44, 44, 0.15)), rgba(44, 44, 44, 0.96);
+    --background-fillcolor-acrylicbackground-base: linear-gradient(0deg, rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), rgba(32, 32, 32, 0.96);
+    --shadows-flyout: 0px 8px 16px rgba(0, 0, 0, 0.26);
     --blur-acrylic: blur(30px);
     --blur-mica: blur(120px);
 }
@@ -177,7 +183,8 @@ label {
 }
 
 a.btn,
-button {
+button,
+.dropdown {
     -webkit-user-select: none;
     user-select: none;
 }

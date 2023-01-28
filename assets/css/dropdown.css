@@ -1,3 +1,80 @@
+.dropdown {
+    /* background-color: rgba(255, 0, 0, 0.1); */
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 120px;
+}
+
+.selected {
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    min-width: 84px;
+    padding: 4px 11px;
+    background-color: var(--fillcolor-control-default);
+    color: var(--fillcolor-text-primary);
+    border-top: 1px solid var(--elevation-control-border-top);
+    border-right: 1px solid var(--elevation-control-border-sid);
+    border-left: 1px solid var(--elevation-control-border-sid);
+    border-bottom: 1px solid var(--elevation-control-border-bot);
+    border-radius: 3px 0 0 3px;
+}
+
+.selected:hover {
+    background-color: var(--fillcolor-control-secondary);
+}
+
+.selected:active {
+    background-color: var(--fillcolor-control-tertiary);
+    color: var(--fillcolor-text-secondary);
+    border: 1px solid var(--elevation-control-border-top);
+}
+
+.selected[disabled] {
+    background-color: var(--fillcolor-control-disabled);
+    color: var(--fillcolor-text-disabled);
+    border: 1px solid var(--elevation-control-border-top);
+}
+
+.dropdown .btn {
+    /* position: absolute;
+    left: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    height: 32px;
+    width: 36px;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: var(--fillcolor-control-default);
+    color: var(--fillcolor-text-primary);
+    border-top: 1px solid var(--elevation-control-border-top);
+    border-right: 1px solid var(--elevation-control-border-sid);
+    /* border-left: 1px solid var(--elevation-control-border-sid); */
+    border-bottom: 1px solid var(--elevation-control-border-bot);
+    border-radius: 0px 4px 4px 0px;
+}
+
+.btn:hover {
+    background-color: var(--fillcolor-control-secondary);
+}
+
+.btn:active {
+    background-color: var(--fillcolor-control-tertiary);
+    color: var(--fillcolor-text-secondary);
+    border-top: 1px solid var(--elevation-control-border-top);
+    border-right: 1px solid var(--elevation-control-border-top);
+    border-bottom: 1px solid var(--elevation-control-border-top);
+}
+
+.selected[disabled]+.btn {
+    background-color: var(--fillcolor-control-disabled);
+    color: var(--fillcolor-text-disabled);
+    border: 1px solid var(--elevation-control-border-top);
+}
+
 my-dropdown {
     display: flex;
     align-items: center;
@@ -13,6 +90,7 @@ my-dropdown i {
     pointer-events: none;
     font-size: 12px;
     line-height: 12px;
+    color: var(--fillcolor-text-primary);
 }
 
 select {
@@ -36,17 +114,98 @@ select:hover {
 select:active {
     background-color: var(--fillcolor-control-tertiary);
     color: var(--fillcolor-text-secondary);
-    border-top: 1px solid var(--elevation-control-border-top);
+    border: 1px solid var(--elevation-control-border-top);
+}
+
+select:active+i {
+    color: var(--fillcolor-text-secondary);
 }
 
 select:disabled {
-    pointer-events: none;
-    background-color: var(--fillcolor-accent-disabled);
-    color: var(--fillcolor-textonaccent-disabled);
-    border: none;
+    background-color: var(--fillcolor-control-disabled);
+    color: var(--fillcolor-text-disabled);
+    border: 1px solid var(--elevation-control-border-top);
 }
 
-select:focus-visible {
+select:disabled+i {
+    color: var(--fillcolor-text-disabled);
+}
+
+select:focus {
+    outline: none;
+}
+
+select:focus:not(:focus-visible) {
+    outline: none;
+}
+
+select:focus:focus-visible {
+    outline: 2px solid blue;
+}
+
+/* select:focus:focus-visible {
     outline: none;
     box-shadow: var(--focus-element);
+} */
+
+.custom-select {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+
+/* .selected {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    padding-left: 10px;
+} */
+
+.dropdown .options {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    min-width: 280px;
+    background: var(--background-fillcolor-acrylicbackground-default);
+    backdrop-filter: var(--blur-acrylic);
+    border-radius: 7px;
+    box-shadow: var(--shadows-flyout);
+    border: 1px solid var(--elevation-control-border-top);
+}
+
+.dropdown .options::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/NoiseAsset_256.png);
+    opacity: 0.02;
+    border-radius: 6px;
+    z-index: -1;
+}
+
+.dropdown .options li {
+    cursor: pointer;
+    list-style-type: none;
+    height: 34px;
+    margin: 3px 5px;
+    padding: 6px 11px 8px;
+    border-radius: 3px;
+    background-color: var(--elevation-subtle-transparent);
+    color: var(--fillcolor-text-primary);
+}
+
+.dropdown .options li:hover {
+    background-color: var(--elevation-subtle-secondary);
+}
+
+.dropdown .options li:active {
+    background-color: var(--elevation-subtle-tertiary);
 }

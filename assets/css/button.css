@@ -57,13 +57,13 @@ button.standard:hover {
 button.standard:active {
     background-color: var(--fillcolor-control-tertiary);
     color: var(--fillcolor-text-secondary);
-    border-top: 1px solid var(--elevation-control-border-top);
+    border: 1px solid var(--elevation-control-border-top);
 }
 
 button.standard:disabled {
     background-color: var(--fillcolor-control-disabled);
     color: var(--fillcolor-text-disabled);
-    border-top: 1px solid var(--elevation-control-border-top);
+    border: 1px solid var(--elevation-control-border-top);
 }
 
 /* ############################################################################################ */
