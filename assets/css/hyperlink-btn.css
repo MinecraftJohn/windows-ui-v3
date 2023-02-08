@@ -19,6 +19,7 @@ a.btn:hover {
 a.btn:active {
     background-color: var(--elevation-subtle-tertiary);
     color: var(--fillcolor-accenttext-tertiary);
+    border: none;
 }
 
 a.btn[disabled] {

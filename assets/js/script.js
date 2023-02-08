@@ -4,30 +4,16 @@ var theme = document.getElementById("theme"),
 theme.onclick = () => {
     if (theme.checked) {
         html.setAttribute("theme", "dark");
+        localStorage.setItem("theme", "dark");
     } else {
         html.setAttribute("theme", "light");
+        localStorage.setItem("theme", "light");
     }
 }
 
-const selects = document.getElementsByClassName("dropdown");
-
-for (let i = 0; i < selects.length; i++) {
-    const select = selects[i];
-    const selected = select.getElementsByClassName("selected")[0];
-    const options = select.getElementsByClassName("options")[0];
-
-    select.addEventListener("click", () => {
-        options.style.display = options.style.display === "block" ? "none" : "block";
-    });
-
-    options.addEventListener("click", (event) => {
-        selected.innerHTML = event.target.innerHTML;
-        options.style.display = "none";
-    });
-
-    document.addEventListener("click", (event) => {
-        if (!select.contains(event.target)) {
-            options.style.display = "none";
-        }
-    });
+if (localStorage.getItem("theme") == "light") {
+    html.setAttribute("theme", "light");
+} else {
+    html.setAttribute("theme", "dark");
+    theme.setAttribute("checked", "")
 }

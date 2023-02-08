@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windows UI</title>
+    <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/library.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -13,7 +14,9 @@
     <link rel="stylesheet" href="assets/css/hyperlink-btn.css">
     <link rel="stylesheet" href="assets/css/hyperlink.css">
     <link rel="stylesheet" href="assets/css/dropdown.css">
+    <!-- JavaScript Files -->
     <script src="assets/js/script.js" defer></script>
+    <!-- <script src="assets/js/dropdown.js" defer></script> -->
 </head>
 
 <body>
@@ -112,10 +115,10 @@
                 <a href="#" class="btn"><i></i></a>
             </div>
             <div class="variant-content">
-                <a href="#" class="btn" disabled>Disabled</a>
-                <a href="#" class="btn" disabled><i></i>Disabled</a>
-                <a href="#" class="btn" disabled>Disabled<i></i></a>
-                <a href="#" class="btn" disabled><i></i></a>
+                <a href="#" class="btn" disabled tabindex="-1">Disabled</a>
+                <a href="#" class="btn" disabled tabindex="-1"><i></i>Disabled</a>
+                <a href="#" class="btn" disabled tabindex="-1">Disabled<i></i></a>
+                <a href="#" class="btn" disabled tabindex="-1"><i></i></a>
             </div>
         </section>
         <section class="variant-section">
@@ -127,10 +130,10 @@
                 <a href="#" class="btn neutral"><i></i></a>
             </div>
             <div class="variant-content">
-                <a href="#" class="btn neutral" disabled>Disabled</a>
-                <a href="#" class="btn neutral" disabled><i></i>Disabled</a>
-                <a href="#" class="btn neutral" disabled>Disabled<i></i></a>
-                <a href="#" class="btn neutral" disabled><i></i></a>
+                <a href="#" class="btn neutral" disabled tabindex="-1">Disabled</a>
+                <a href="#" class="btn neutral" disabled tabindex="-1"><i></i>Disabled</a>
+                <a href="#" class="btn neutral" disabled tabindex="-1">Disabled<i></i></a>
+                <a href="#" class="btn neutral" disabled tabindex="-1"><i></i></a>
             </div>
         </section>
         <section class="variant-section">
@@ -145,13 +148,13 @@
                 <a href="#" class="btn alt icon12"><i></i></a>
             </div>
             <div class="variant-content">
-                <a href="#" class="btn alt" disabled>Disabled</a>
-                <a href="#" class="btn alt" disabled><i></i>Disabled</a>
-                <a href="#" class="btn alt" disabled>Disabled<i></i></a>
-                <a href="#" class="btn alt" disabled><i></i></a>
-                <a href="#" class="btn alt icon12" disabled><i>&#xe76b;</i>Disabled</a>
-                <a href="#" class="btn alt icon12" disabled>Disabled<i>&#xe76c;</i></a>
-                <a href="#" class="btn alt icon12" disabled><i></i></a>
+                <a href="#" class="btn alt" disabled tabindex="-1">Disabled</a>
+                <a href="#" class="btn alt" disabled tabindex="-1"><i></i>Disabled</a>
+                <a href="#" class="btn alt" disabled tabindex="-1">Disabled<i></i></a>
+                <a href="#" class="btn alt" disabled tabindex="-1"><i></i></a>
+                <a href="#" class="btn alt icon12" disabled tabindex="-1"><i>&#xe76b;</i>Disabled</a>
+                <a href="#" class="btn alt icon12" disabled tabindex="-1">Disabled<i>&#xe76c;</i></a>
+                <a href="#" class="btn alt icon12" disabled tabindex="-1"><i></i></a>
             </div>
         </section>
         <br>
@@ -164,7 +167,7 @@
                 <a href="#">Sample link</a>
             </div>
             <div class="variant-content">
-                <a href="#" disabled>Disabled sample link</a>
+                <a href="#" disabled tabindex="-1">Disabled sample link</a>
             </div>
         </section>
         <br>
@@ -174,16 +177,7 @@
         <section class="variant-section">
             <h2 font="subtitle">Standard</h2>
             <div class="variant-content">
-                <!-- <my-dropdown>
-                    <select name="test1" id="test1" autofocus>
-                        <option value="1" style="background-color: red;">Dogs</option>
-                        <option value="2">Cats</option>
-                        <option value="3">Huh?</option>
-                    </select>
-                    <i></i>
-                    <i></i>
-                </my-dropdown> -->
-                <section class="dropdown">
+                <section class="dropdown" tabindex="1">
                     <div class="selected">Text</div>
                     <i class="btn"></i>
                     <ul class="options">
@@ -192,7 +186,7 @@
                         <li>Option 3</li>
                     </ul>
                 </section>
-                <section class="dropdown">
+                <section class="dropdown" tabindex="1">
                     <div class="selected"></div>
                     <ul class="options">
                         <li>Option A</li>
@@ -200,7 +194,6 @@
                         <li>Option C</li>
                     </ul>
                 </section>
-
             </div>
             <div class="variant-content">
             </div>
