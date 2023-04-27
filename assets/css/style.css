@@ -1,0 +1,38 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    background-image: var(--page-background);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 32px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.theme-form {
+    display: flex;
+    gap: 8px;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.variant-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.variant-content {
+    display: flex;
+    gap: 8px;
+}

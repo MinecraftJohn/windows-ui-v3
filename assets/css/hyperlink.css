@@ -1,0 +1,20 @@
+a {
+    color: var(--fillcolor-accenttext-primary);
+}
+
+a:hover {
+    color: var(--fillcolor-accenttext-secondary);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--fillcolor-accenttext-tertiary);
+    text-decoration: none;
+}
+
+a[disabled] {
+    color: var(--fillcolor-accenttext-disabled);
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
